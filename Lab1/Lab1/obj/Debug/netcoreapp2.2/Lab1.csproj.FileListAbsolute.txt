@@ -1,0 +1,9 @@
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\bin\Debug\netcoreapp2.2\Lab1.dll.config
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\bin\Debug\netcoreapp2.2\Lab1.deps.json
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\bin\Debug\netcoreapp2.2\Lab1.runtimeconfig.json
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\bin\Debug\netcoreapp2.2\Lab1.runtimeconfig.dev.json
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\bin\Debug\netcoreapp2.2\Lab1.dll
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\obj\Debug\netcoreapp2.2\Lab1.csprojAssemblyReference.cache
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\obj\Debug\netcoreapp2.2\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\obj\Debug\netcoreapp2.2\Lab1.AssemblyInfoInputs.cache
+C:\Users\perry\source\repos\COMP4870Labs\Lab1\Lab1\obj\Debug\netcoreapp2.2\Lab1.AssemblyInfo.cs
