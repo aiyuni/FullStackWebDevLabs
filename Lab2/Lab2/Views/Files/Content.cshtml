@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "File Details Page";
+    var text = ViewBag.FileText;
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    
+    <p>Contents of the file is: @text</p>
+</div>

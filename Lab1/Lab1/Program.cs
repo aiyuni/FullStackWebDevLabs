@@ -28,15 +28,26 @@ namespace Lab1
             }
 
             List<Customer> salesCustomers = dbContext.Customer.Where(c => c.PersonId != null).ToList();
+            List<Customer> sc = salesCustomers.Where(p => p)
             //List<Customer> salesCustomers = dbContext.Customer.Select(c => new {c.CustomerId, c.PersonId, c.Person});
-
             List<Person> salesPersons = new List<Person>();
-            foreach (Customer saleCustomer in salesCustomers)
+            //foreach (Customer saleCustomer in salesCustomers)
+            //{
+            //    Person salePerson = dbContext.Person.Find(saleCustomer.PersonId);
+            //    salesPersons.Add(salePerson);
+            //    Console.WriteLine("Sales customer name is: " + salePerson.FirstName + " " + salePerson.MiddleName +
+            //                      salePerson.LastName);
+
+            //}
+
+            var cl = dbContext.Customer.Where(c => c.Person != null).Select(p => new
             {
-                Person salePerson = dbContext.Person.Find(saleCustomer.PersonId);
-                salesPersons.Add(salePerson);
-                Console.WriteLine("Sales customer name is: " + salePerson.FirstName + " " + salePerson.MiddleName +
-                                  salePerson.LastName);
+                p.CustomerId, p.Person.FirstName, p.Person.LastName
+            });
+
+            foreach (var item in cl)
+            {
+                Console.WriteLine(item.FirstName + ", " + item.LastName);
             }
 
             Console.WriteLine();

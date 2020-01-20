@@ -1,0 +1,22 @@
+﻿@using Microsoft.CodeAnalysis.CSharp.Syntax
+@{
+    ViewData["Title"] = "File Page";
+    var files = (String[])ViewBag.FileBag;
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to file page</h1>
+        
+        <ul>
+        @{foreach (var item in files)
+            {
+                <li>
+                    @*<p>@item</p>*@
+                    <a asp-controller="Files"
+                       asp-action="Content"
+                       asp-route-id="@item">@item</a>
+                </li>
+                
+            }}
+        </ul>
+    </div>
